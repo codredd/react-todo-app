@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.NETLIFYPAT }}
+
       - name: Setup node
         uses: actions/setup-node@v2
         with:
