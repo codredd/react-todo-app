@@ -27,6 +27,9 @@ jobs:
       - name: Tests
         run: npm run test
 
+      - name: Build website
+        run: npm run build
+
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
         with:
